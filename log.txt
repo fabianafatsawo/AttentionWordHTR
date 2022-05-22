@@ -1,0 +1,214 @@
+python3 main.py --image "images/"
+model input parameters 32 100 20 1 512 256 96 25 TPS ResNet BiLSTM Attn
+loading pretrained model from AttentionHTR/model/saved_models/AttentionHTR-General-sensitive.pth
+|-- Preprocessing images/TEST.png --|
+|-- Preprocessing images/image1.png --|
+|-- Preprocessing images/image2.png --|
+|-- Preprocessing images/image3.png --|
+|-- Preprocessing images/img.jpeg --|
+|-- Preprocessing images/letter_h.png --|
+|-- Preprocessing images/phone1.png --|
+|-- Preprocessing images/phone1cropped.png --|
+|-- Preprocessing images/phone1turned.png --|
+|-- Preprocessing images/phone1turned20.png --|
+|-- Preprocessing images/phone2.png --|
+|-- Preprocessing images/phone2cropped.png --|
+|-- Preprocessing images/phone3.png --|
+|-- Preprocessing images/phone4.png --|
+|-- Preprocessing images/phone4cropped.png --|
+|-- Preprocessing images/word-segmentation.jpeg --|
+------------------------------------------
+|-- Analyzing image 1: images/TEST.png --|
+------------------------------------------
+
+prediction:             H
+
+average confidence:     44.50%
+runtime:                0.08s
+
+predicted words:        ['H']
+
+--------------------------------------------
+|-- Analyzing image 2: images/image1.png --|
+--------------------------------------------
+
+prediction:             HELLO 1. WORLD
+
+average confidence:     77.57%
+runtime:                0.18s
+
+predicted words:        ['HELLO', '1.', 'WORLD']
+
+--------------------------------------------
+|-- Analyzing image 3: images/image2.png --|
+--------------------------------------------
+
+prediction:             -
+
+average confidence:     74.20%
+runtime:                0.06s
+
+predicted words:        ['-']
+
+--------------------------------------------
+|-- Analyzing image 4: images/image3.png --|
+--------------------------------------------
+
+prediction:             -
+
+average confidence:     36.82%
+runtime:                0.06s
+
+predicted words:        ['-']
+
+------------------------------------------
+|-- Analyzing image 5: images/img.jpeg --|
+------------------------------------------
+
+prediction:             Thinithandvition example wninewngrdncropropropropr
+
+average confidence:     33.24%
+runtime:                0.16s
+
+predicted words:        ['Thinithandvition', 'example', 'wninewngrdncropropropropr']
+
+----------------------------------------------
+|-- Analyzing image 6: images/letter_h.png --|
+----------------------------------------------
+
+prediction:             H
+
+average confidence:     36.90%
+runtime:                0.08s
+
+predicted words:        ['H']
+
+--------------------------------------------
+|-- Analyzing image 7: images/phone1.png --|
+--------------------------------------------
+
+prediction:             This is atest
+
+average confidence:     81.70%
+runtime:                0.13s
+
+predicted words:        ['This', 'is', 'atest']
+
+---------------------------------------------------
+|-- Analyzing image 8: images/phone1cropped.png --|
+---------------------------------------------------
+
+prediction:             This is atest
+
+average confidence:     87.62%
+runtime:                0.15s
+
+predicted words:        ['This', 'is', 'atest']
+
+--------------------------------------------------
+|-- Analyzing image 9: images/phone1turned.png --|
+--------------------------------------------------
+
+prediction:             . =t -- 4 is P I
+
+average confidence:     47.87%
+runtime:                0.28s
+
+predicted words:        ['.', '=t', '--', '4', 'is', 'P', 'I']
+
+-----------------------------------------------------
+|-- Analyzing image 10: images/phone1turned20.png --|
+-----------------------------------------------------
+
+prediction:             -
+
+average confidence:     54.94%
+runtime:                0.07s
+
+predicted words:        ['-']
+
+---------------------------------------------
+|-- Analyzing image 11: images/phone2.png --|
+---------------------------------------------
+
+prediction:             Hallo
+
+average confidence:     97.87%
+runtime:                0.07s
+
+predicted words:        ['Hallo']
+
+----------------------------------------------------
+|-- Analyzing image 12: images/phone2cropped.png --|
+----------------------------------------------------
+
+prediction:             Hallo
+
+average confidence:     98.16%
+runtime:                0.06s
+
+predicted words:        ['Hallo']
+
+---------------------------------------------
+|-- Analyzing image 13: images/phone3.png --|
+---------------------------------------------
+
+prediction:             Test
+
+average confidence:     95.90%
+runtime:                0.06s
+
+predicted words:        ['Test']
+
+---------------------------------------------
+|-- Analyzing image 14: images/phone4.png --|
+---------------------------------------------
+
+prediction:             Datachecker
+
+average confidence:     88.73%
+runtime:                0.07s
+
+predicted words:        ['Datachecker']
+
+----------------------------------------------------
+|-- Analyzing image 15: images/phone4cropped.png --|
+----------------------------------------------------
+
+prediction:             Datachecker
+
+average confidence:     90.27%
+runtime:                0.06s
+
+predicted words:        ['Datachecker']
+
+---------------------------------------------------------
+|-- Analyzing image 16: images/word-segmentation.jpeg --|
+---------------------------------------------------------
+
+prediction:             The fita World (up often simply called the world Cup is an association football competition contested by the senior men's national teams of the members of the FIFA. The championship has been awarded every four years except in 19h2 : 19L6 when it was not held due to WWIL.
+
+average confidence:     85.29%
+runtime:                1.75s
+
+predicted words:        ['The', 'fita', 'World', '(up', 'often', 'simply', 'called', 'the', 'world', 'Cup', 'is', 'an', 'association', 'football', 'competition', 'contested', 'by', 'the', 'senior', "men's", 'national', 'teams', 'of', 'the', 'members', 'of', 'the', 'FIFA.', 'The', 'championship', 'has', 'been', 'awarded', 'every', 'four', 'years', 'except', 'in', '19h2', ':', '19L6', 'when', 'it', 'was', 'not', 'held', 'due', 'to', 'WWIL.']
+
+Total runtime:          3.32s
+
+|-- Saving images --|
+(1/16)  Succesfully saved image to output/TEST_ocr_22052022_124742.png!
+(2/16)  Succesfully saved image to output/image1_ocr_22052022_124742.png!
+(3/16)  Succesfully saved image to output/image2_ocr_22052022_124744.png!
+(4/16)  Succesfully saved image to output/image3_ocr_22052022_124744.png!
+(5/16)  Succesfully saved image to output/img_ocr_22052022_124745.jpeg!
+(6/16)  Succesfully saved image to output/letter_h_ocr_22052022_124745.png!
+(7/16)  Succesfully saved image to output/phone1_ocr_22052022_124745.png!
+(8/16)  Succesfully saved image to output/phone1cropped_ocr_22052022_124747.png!
+(9/16)  Succesfully saved image to output/phone1turned_ocr_22052022_124747.png!
+(10/16) Succesfully saved image to output/phone1turned20_ocr_22052022_124750.png!
+(11/16) Succesfully saved image to output/phone2_ocr_22052022_124751.png!
+(12/16) Succesfully saved image to output/phone2cropped_ocr_22052022_124752.png!
+(13/16) Succesfully saved image to output/phone3_ocr_22052022_124752.png!
+(14/16) Succesfully saved image to output/phone4_ocr_22052022_124753.png!
+(15/16) Succesfully saved image to output/phone4cropped_ocr_22052022_124754.png!
+(16/16) Succesfully saved image to output/word-segmentation_ocr_22052022_124754.jpeg!
